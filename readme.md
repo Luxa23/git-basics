@@ -3,7 +3,7 @@
 ## git repository
 
 - `git init` - erstellt neues leeres repository lokal 
-- `git status` - zeigt branch, commits, untracked files
+- `git status` - zeigt branch, commits, untracked files (gst)
 
 ## commit
 
@@ -14,16 +14,18 @@
 ## how to return to save points
 
 - `git restore <file name>` - stellt eine frühere Version wieder her
-- `git restore --staged <file name>` - stellt eine frühere Version inkl. Content wieder her
+- `git restore --staged <file name>` - unstage working tree files
 
 ## remote repository
 
 - `git remote add origin <ssh link>` - verknüpft lokales und online repository (online repository muss vorher in git angelegt werden)
 - `git remote -v` - prüft neu verknüpfte repositories 
-- `git push -u origin <branch name>` - bringt lokale Änderungen eines bestimmten branches auf ein remote repository 
-- `git push` - 
+- `git remote remove origin` - deletes the source of the origin, entfernt den ssh link
+- `git remote remove origin add <ssh link>` - 
+- `git push -u origin <branch name>` - bringt lokale Änderungen eines bestimmten branches auf ein remote repository; verknüpft meinen branch mit dem remote target (origin)
+- `git push` - uploads all new content to remote
 - `git pull -u origin <branch name>` - bringt remote Änderungen eines bestimmten branches im repository ins lokale repository
-- `git pull`
+- `git pull` - nur Änderungen werden von remote zu lokal verschoben
 
 ## branching
 
